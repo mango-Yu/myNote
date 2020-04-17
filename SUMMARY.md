@@ -1,9 +1,10 @@
 # Summary
 
 * [前言](README.md)
-* [生活](page/self/README.md)
-* [工作](page/work/README.md)
-* [学习](page/learn/README.md)
-* [历史](page/history/README.md)
-* [新闻](page/news/README.md)
-* [软件](page/soft/README.md)
+* [生活](page/self/self.md)
+* [工作](page/work/work.md)
+<!--* [学习](page/learn/learn.md)-->
+<!--* [历史](page/history/history.md)-->
+<!--* [新闻](page/news/news.md)-->
+<!--* [软件](page/soft/soft.md)-->
+* [随笔](page/myself/myself.md)
