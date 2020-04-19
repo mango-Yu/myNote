@@ -8,3 +8,4 @@
 <!--* [新闻](page/news/news.md)-->
 <!--* [软件](page/soft/soft.md)-->
 * [随笔](page/myself/myself.md)
+* [软件使用](page/use-soft/usr-soft.md)
