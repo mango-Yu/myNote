@@ -10,3 +10,6 @@ GitBook.com 是一个使用工具链来创建和托管书籍的在线平台 ([ww
 
 > 欢迎关注公众号**【不吃Mango】**扫描左侧二维码添加关注
 
+
+
+<img src='./logo.jpg' alt='不吃Mango' style='width: 150px;  position: absolute; left: 50%;  margin-left: -75px;'   title='不吃Mango'>
