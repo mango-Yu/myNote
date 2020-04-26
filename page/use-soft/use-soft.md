@@ -1,4 +1,7 @@
 #软件使用
+  ##v2ray
+    https://toutyrater.github.io/prep/install.html 
+    https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC 
   ##Nginx
   一、启动
   
@@ -86,3 +89,34 @@
         
         setsid gitbook serve  启动gitbook并保持不停止
 
+   ### IDEA
+   ##### 插件
+    智能代码提示：codota，
+    快捷键提示：Key-Promoter-X，
+    lombok-plugin，
+    MavenRunHelper，
+    将json转换为模型对象：RoboPOJOGenerator，
+    项目类型统计：Statistic
+   ###谷歌浏览器
+   ####浏览器插件
+   >Tablist
+   
+    查看打开的所有网页链接一键复制或者选择复制
+   > adblock
+   
+    在YouTube、Facebook、Twitch和其他你喜爱的网站上拦截广告和弹窗。
+   >idm
+
+    一个页面集成下载器
+   >JSONView
+    
+    查看页面json文件格式化
+   >OneTab
+   
+    节省高达95％的内存，并减轻标签页混乱现象
+   >捕捉网页截图
+   
+    捕捉网页截图，编辑并将它们保存为PDF，JPEG，GIF，PNG或BMP；上传，打印，在Photoshop中打开，复制到剪贴板或电子邮件
+   >极简图床
+   
+    帮你快速下载页面中的图片
