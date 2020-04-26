@@ -9,7 +9,7 @@
 * [软件](page/soft/soft.md)
 <!--* [随笔](page/myself/myself.md)-->
 <!--* [软件使用经验](page/use-soft/use-soft.md)-->
-<!--* [济南楼市统计](page/house/house-info.md)-->
+* [济南楼市统计](page/house/house-info.md)
 <!--* [javaScript](page/javaScript/js.md)-->
 <!--* [Vue](page/vue/vue.md)-->
 <!--* [Nginx](page/nginx/nginx.md)-->
