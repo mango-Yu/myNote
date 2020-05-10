@@ -95,6 +95,49 @@
         setsid gitbook serve  启动gitbook并保持不停止
         
 ==========================================================
+   ###docker
+   >安装docker-ce
+   1、安装依赖  docker依赖于系统的一些必要的工具，可以提前安装。
+    
+    yum install -y yum-utils device-mapper-persistent-data lvm2
+   >2、添加软件源
+   
+    yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo 
+   >3、安装docker-ce
+   
+    yum clean all yum makecache fastyum -y install docker-ce
+   >4、启动服务 
+    
+    通过systemctl启动服务
+    
+    systemctl start docker
+   >5、查看安装版本
+    
+    这样子就安装成功了，启动服务以后可以使用docker version查看一下当前的版本。
+    docker version
+    Client:Version: 18.09.2 API version: 1.39 Go version: go1.10.6 Git commit: 6247962 Built: Sun Feb 10 04:13:27 2019 OS/Arch: linux/amd64 Experimental: falseServer: Docker Engine - Community Engine: Version: 18.09.2 API version: 1.39 (minimum version 1.12) Go version: go1.10.6 Git commit: 6247962 Built: Sun Feb 10 03:47:25 2019 OS/Arch: linux/amd64 Experimental: false
+   >安装 Shadowsocks
+    拉取docker-shadowsocks镜像
+    
+    安装的过程非常简单，只需要一个命令就可以，命令中有两个参数可以自修改，-p是设置shadowsocks的服务器端口号，-k是设置自己的密码
+    命令：
+    docker run -d --name shadowsocks -p 12306:12306 oddrationale/docker-shadowsocks -s 0.0.0.0 -p 12306 -k 0000 -m aes-256-cfb
+    
+    使用docker ps来来查看是否安装成功：
+     docker ps                                                                                                                        
+    CONTAINER ID        IMAGE                             COMMAND                CREATED                  STATUS              PORTS                            NAMES
+    1016c8cc0ce4        oddrationale/docker-shadowsocks   "/usr/local/bin/ssse   Less than a second ago   Up 22 seconds       104.130.22.24:12306->12306/tcp   2ede2591-1ec0-4c2b-a3ef-59697ff02ba7-n1/shadowsocks   
+    b47dd901c3dd        carina/consul                     "/bin/consul agent -   5 hours ago              Up 5 hours                                           2ede2591-1ec0-4c2b-a3ef-59697ff02ba7-n1/carina-svcd
+    可以看到shadowsocks服务已经在运行了。
+   >使用shadowsocks连接服务器
+    
+    （1）选在windows的 Shadowsocks客户端 ，解压到任意的目录下，运行
+    （2）添加shadowsocks的服务器的ip和端口号、密码，点击确定就可，其中服务器ip填你所购买的服务器的ip地址，端口号和密码填你上面设置的。
+   <img src='../../img/userSoft/shadow.jpg' alt='不吃Mango' style='width: 150px; '   title='shadow'>
+   
+    （3）右键点击任务栏中shadowsocks.exe的图标，勾选“启用系统代理”。
+    （4）打开任意浏览器，即可自由上网 
+==========================================================
    ### IDEA
    ##### 插件
     智能代码提示：codota，
